@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{properties.title}}</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div>
+        <div class="hero">
+          <div>
+            <div>
+              <picture>
+                <img src="{{properties.elements.image.value}}" alt="{{properties.elements.programName.value}}">
+              </picture>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1>{{properties.elements.programName.value}}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p><strong>Code:</strong> {{properties.elements.programCode.value}}</p>
+        {{{properties.elements.descriptionOfProgram.value}}}
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
