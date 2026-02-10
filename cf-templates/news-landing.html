@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>News</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="section">
+        <div class="cards">
+          {{#entities}}
+          <div>
+            <div>
+              <picture>
+                <img src="{{properties.elements.image.value}}" alt="{{properties.elements.newsTitle.value}}">
+              </picture>
+            </div>
+            <div>
+              <p>
+                <a href="{{properties.name}}.html">{{properties.elements.newsTitle.value}}</a>
+              </p>
+              <p><strong>Author:</strong> {{properties.elements.author.value}}</p>
+              <p><strong>Year:</strong> {{properties.elements.year.value}}</p>
+              {{{properties.elements.descriptionOfNews.value}}}
+            </div>
+          </div>
+          {{/entities}}
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
